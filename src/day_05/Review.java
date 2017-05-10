@@ -14,9 +14,9 @@ public class Review {
 		//char cc = name.charAt(1);
 		//int size = name.length();
 		
-		String name = args[0];
-		char cc = name.charAt(0);
-		System.out.println(cc);
+		//String name = args[0];
+		//char cc = name.charAt(0);
+		//System.out.println(cc);
 		
 		int[] n = null;
 		n = new int[6];
