@@ -45,15 +45,6 @@ public class PhoneDrive {
 				System.out.println("다시 입력하세요");
 			}
 			
-			/*
-			 * if (num == 1) { System.out.println("=======데이터 입력======");
-			 * System.out.println("========================"); } else if (num ==
-			 * 2) { System.out.println("=======회원 목록=======");
-			 * System.out.println("======================="); } else if (num ==
-			 * 3) { System.out.println("=======회원 조회=======");
-			 * System.out.println("======================="); } else if (num ==
-			 * 4) { System.out.println("종료합니다."); break; }
-			 */
 		}
 	}
 
