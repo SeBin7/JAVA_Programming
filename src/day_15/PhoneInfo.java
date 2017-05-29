@@ -1,44 +1,39 @@
-package Phone;
+package day_15;
 
-public class PhoneInfo {
-	private String name;
-	private String phoneNumber;
+import java.util.Objects;
+
+public class PhoneInfo implements Comparable<PhoneInfo>{
+	String name;
+	String phoneNumber;
 	
-	public PhoneInfo(){}
-	
-	public PhoneInfo(String name, String phoneNumber) {
-		setName(name);
-		setPhoneNumber(phoneNumber);
+	public PhoneInfo() {
+		super();
 	}
-
+	public PhoneInfo(String name, String phoneNumber) {
+		super();
+		this.name = name;
+		this.phoneNumber = phoneNumber;
+	}
 	public String getName() {
 		return name;
 	}
-
 	public void setName(String name) {
 		this.name = name;
 	}
-
 	public String getPhoneNumber() {
 		return phoneNumber;
 	}
-
 	public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
-
-	void print() {
-		System.out.printf("이름: %3s, 번호 %s", name, phoneNumber);
-		System.out.println();
-		return;
-	}
-
 	@Override
 	public String toString() {
 		return "PhoneInfo [name=" + name + ", phoneNumber=" + phoneNumber + "]";
 	}
-
 	@Override
+	public int hashCode() {
+		return Objects.hash(name,phoneNumber);
+	}
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
@@ -59,6 +54,8 @@ public class PhoneInfo {
 			return false;
 		return true;
 	}
-	
-	
+	@Override
+	public int compareTo(PhoneInfo o) {
+		return phoneNumber.compareTo(o.phoneNumber);
+	}
 }
