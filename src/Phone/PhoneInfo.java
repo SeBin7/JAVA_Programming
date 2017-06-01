@@ -1,12 +1,15 @@
 package Phone;
 
-public class PhoneInfo {
+import java.io.Serializable;
+
+public class PhoneInfo implements Serializable {
 	private String name;
 	private String phoneNumber;
 	
 	public PhoneInfo(){}
 	
 	public PhoneInfo(String name, String phoneNumber) {
+		super();
 		setName(name);
 		setPhoneNumber(phoneNumber);
 	}

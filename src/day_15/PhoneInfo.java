@@ -1,10 +1,12 @@
 package day_15;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class PhoneInfo implements Comparable<PhoneInfo>{
+public class PhoneInfo implements Comparable<PhoneInfo>, Serializable{
 	String name;
-	String phoneNumber;
+	//transient String phoneNumber;
+	 String phoneNumber;
 	
 	public PhoneInfo() {
 		super();
